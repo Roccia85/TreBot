@@ -31,14 +31,14 @@ Get updates sent to the bot
 """
 
 def reply(update):
-  if update.message.text == 'ciao' :
+  if update.message.text == 'ciao' or update.message.text == 'Ciao'  :
     bot.send_message(update.message.chat.id, 'Ma ciao!').wait()
   if update.message.text == 'Rossella?' :
     bot.send_message(update.message.chat.id, 'Gluglugluglugluglugluglu :heart:').wait()
   if update.message.text == 'Marco?' :
     bot.send_message(update.message.chat.id, 'Cheffigo!!').wait()
   if "grazie" in update.message.text :
-    bot.send_message(update.message.chat.id, 'Grazie graziella grazie al cazzo!').wait()
+    bot.send_message(update.message.chat.id, 'Grazie graziella grazie al cazzone!').wait()
   #if "foto?" in update.message.text:
   #  fp = open('foto.jpg', 'rb')
   #  file_info = InputFileInfo('foto.jpg', fp, 'image/jpg')
@@ -63,7 +63,6 @@ while(var == 1):
       offset = update.update_id + 1              
       print(update.message.sender.id)
       reply(update)
-  time.sleep(1)
 
 
 
