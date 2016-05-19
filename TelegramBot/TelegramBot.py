@@ -31,29 +31,30 @@ Get updates sent to the bot
 """
 
 def reply(update):
-  if update.message.text == 'ciao' or update.message.text == 'Ciao'  :
-    bot.send_message(update.message.chat.id, 'Ma ciao!').wait()
-  if update.message.text == 'Rossella?' :
-    bot.send_message(update.message.chat.id, 'Gluglugluglugluglugluglu :heart:').wait()
-  if update.message.text == 'Marco?' :
-    bot.send_message(update.message.chat.id, 'Cheffigo!!').wait()
-  if "grazie" in update.message.text :
-    bot.send_message(update.message.chat.id, 'Grazie graziella grazie al cazzone!').wait()
-  #if "foto?" in update.message.text:
-  #  fp = open('foto.jpg', 'rb')
-  #  file_info = InputFileInfo('foto.jpg', fp, 'image/jpg')
-  #  input=InputFile('photo', file_info)
-  #  bot.send_photo(chat_id=update.message.chat.id,photo=input)
-  if "gattino" in update.message.text:
-    fp = open('gattino.jpg', 'rb')
-    file_info = InputFileInfo('gattino.jpg', fp, 'image/jpg')
-    input = InputFile('photo', file_info)
-    bot.send_photo(chat_id=update.message.chat.id,photo=input)
-  if "pene" in update.message.text:
-    fp = open('p.jpg', 'rb')
-    file_info = InputFileInfo('p.jpg', fp, 'image/jpg')
-    input = InputFile('photo', file_info)
-    bot.send_photo(chat_id=update.message.chat.id,photo=input)
+  if update.message is not none :
+    if update.message.text == 'ciao' or update.message.text == 'Ciao'  :
+      bot.send_message(update.message.chat.id, 'Ma ciao!').wait()
+    if update.message.text == 'Rossella?' :
+      bot.send_message(update.message.chat.id, 'Gluglugluglugluglugluglu :heart:').wait()
+    if update.message.text == 'Marco?' :
+      bot.send_message(update.message.chat.id, 'Cheffigo!!').wait()
+    if "grazie" in update.message.text :
+      bot.send_message(update.message.chat.id, 'Grazie graziella grazie al cazzone!').wait()
+    #if "foto?" in update.message.text:
+    #  fp = open('foto.jpg', 'rb')
+    #  file_info = InputFileInfo('foto.jpg', fp, 'image/jpg')
+    #  input=InputFile('photo', file_info)
+    #  bot.send_photo(chat_id=update.message.chat.id,photo=input)
+    if "gattino" in update.message.text:
+      fp = open('gattino.jpg', 'rb')
+      file_info = InputFileInfo('gattino.jpg', fp, 'image/jpg')
+      input = InputFile('photo', file_info)
+      bot.send_photo(chat_id=update.message.chat.id,photo=input)
+    if "pene" in update.message.text:
+      fp = open('p.jpg', 'rb')
+      file_info = InputFileInfo('p.jpg', fp, 'image/jpg')
+      input = InputFile('photo', file_info)
+      bot.send_photo(chat_id=update.message.chat.id,photo=input)
 
 var = 1
 offset = 0
