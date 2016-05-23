@@ -31,7 +31,7 @@ Get updates sent to the bot
 """
 
 def reply(update):
-  if update.message is not none :
+  if update.message is not None :
     if update.message.text == 'ciao' or update.message.text == 'Ciao'  :
       bot.send_message(update.message.chat.id, 'Ma ciao!').wait()
     if update.message.text == 'Rossella?' :
